@@ -11,6 +11,8 @@ import Booking from "@/pages/Booking"
 import Contact from "@/pages/Contact"
 import Documents from "@/pages/Documents"
 import Weather from "@/pages/Weather"
+import Agenda from "@/pages/Agenda"
+import Prijslijst from "@/pages/Prijslijst"
 import { Privacy, Cookies } from "@/pages/Legal"
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="documenten" element={<Documents />} />
           <Route path="weer" element={<Weather />} />
+          <Route path="agenda" element={<Agenda />} />
+          <Route path="prijslijst" element={<Prijslijst />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="cookies" element={<Cookies />} />
         </Route>

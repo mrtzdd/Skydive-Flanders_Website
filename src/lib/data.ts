@@ -623,3 +623,115 @@ export const preparationChecklist = [
   "Vanaf 70 jaar (tandem) of voor alle AFF-cursisten: breng een ingevuld medisch attest mee — download het op onze Documentenpagina.",
   "Voorzie een halve dag (~4 uur) ter plaatse — weer en luchtruim kunnen je tijdslot doen verschuiven.",
 ]
+
+// Rechtstreeks overgenomen van skydiveflanders.be/prijslijst — dezelfde
+// bedragen en voorwaarden die een bezoeker daar te zien krijgt.
+export const pricing = {
+  headline: [
+    {
+      title: "Tandemsprong",
+      price: "€250",
+      note: "€275 aan de kassa",
+      extra: "Video & foto's: €95",
+      footnote: "Bij aankoop van 20 tandems is de 21ste gratis",
+      cta: "Reserveer Nu",
+      href: "/reserveren",
+      icon: "parachute" as const,
+    },
+    {
+      title: "AFF Initiatiesprong",
+      price: "€385",
+      note: "Incl. 1 dag opleiding",
+      extra: "Video & foto's: €95",
+      cta: "Start AFF",
+      href: "/reserveren",
+      icon: "graduation" as const,
+    },
+    {
+      title: "AFF Opleiding",
+      price: "€1.275",
+      note: "€1.200 vanaf september",
+      includes: [
+        "3 sprongen met 2 instructeurs",
+        "4 sprongen met 1 instructeur",
+        "1 solosprong",
+        "Lidgeld en verzekering",
+        "Plooiopleiding",
+        "10' indoor skydive",
+      ],
+      cta: "Volledige Opleiding",
+      href: "/reserveren",
+      icon: "award" as const,
+    },
+  ],
+  repeatJumps: {
+    title: "AFF Herhalingssprongen",
+    rows: [
+      { label: "Met 1 instructeur", price: "€93" },
+      { label: "Met 2 instructeurs", price: "€151" },
+    ],
+  },
+  followUp: {
+    title: "Vervolgopleiding",
+    packs: [
+      {
+        title: "BOSS Pack (8 sprongen)",
+        rows: [
+          { label: "Eigen materiaal", price: "€288" },
+          { label: "Incl. huur materiaal (Excl. Packjob)", price: "€368" },
+        ],
+      },
+      {
+        title: "Coaching Pack (10 sprongen)",
+        rows: [
+          { label: "Eigen materiaal", price: "€360" },
+          { label: "Incl. huur materiaal (Excl. Packjob)", price: "€460" },
+        ],
+      },
+    ],
+    note: "(*) De BOSS cursus en het coaching pack zijn enkel voor leden, kunnen slechts 1 keer aangekocht worden en zijn 2 jaar geldig.",
+  },
+  members: {
+    title: "Leden",
+    rows: [
+      { label: "1 sprong", price: "€24,50" },
+      { label: "1 sprong + materiaal (Excl. Packjob)", price: "€36" },
+      { label: "Block 10 sprongen", price: "€230" },
+      { label: "Block 50 sprongen", price: "€1.112,50" },
+      { label: "Block 100 sprongen", price: "€2.100" },
+    ],
+    note: "Blocks zijn maximaal 2 jaar geldig en kunnen niet gedeeld noch terugbetaald worden.",
+  },
+  nonMembers: {
+    title: "Niet-leden",
+    rows: [
+      { label: "1 sprong", price: "€31" },
+      { label: "1 sprong + materiaal (Excl. Packjob)", price: "€46" },
+    ],
+  },
+  trainingBlocks: {
+    title: "Training Blocks",
+    rows: [
+      { label: "Block solo discipline (50 slots)", price: "€1.050" },
+      { label: "Block performer + video (2x 50 slots)", price: "€2.100" },
+      { label: "Block 2-way (3x 50 slots)", price: "€3.000" },
+      { label: "Block 4-way (5x 50 slots)", price: "€4.750" },
+      { label: "Block 8-way (9x 50 slots)", price: "€8.550" },
+    ],
+    note: "Blocks zijn maximaal 2 jaar geldig en kunnen niet gedeeld noch terugbetaald worden.",
+  },
+  membership: {
+    title: "Lidgeld",
+    rows: [
+      { label: "Lid Skydive Flanders + VVP + verzekering", price: "€220", afterSeptember: "€135" },
+      { label: "Lid Skydive Flanders", price: "€140", afterSeptember: "€80" },
+    ],
+    surcharge: { label: "Toeslag online procedure", price: "€50" },
+    earlyBird: {
+      label: "Early bird korting",
+      price: "-€20",
+      note: "Betaal vanaf 1 november voor het jaar nadien",
+    },
+  },
+  footnote: "Prijzen kunnen ten alle tijden aangepast worden.",
+}

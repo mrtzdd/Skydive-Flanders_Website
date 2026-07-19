@@ -6,17 +6,19 @@ import { logoSrc } from "@/lib/photos"
 import { Button } from "@/components/ui/button"
 
 const exploreLinks = [
-  { to: "/vliegtuig", label: "Vliegtuig" },
+  { to: "/prijslijst", label: "Prijslijst" },
   { to: "/opleiding", label: "Opleiding" },
   { to: "/veiligheid", label: "Veiligheid" },
   { to: "/team", label: "Team" },
   { to: "/galerij", label: "Galerij" },
+  { to: "/vliegtuig", label: "Vliegtuig" },
 ]
 
 const infoLinks = [
   { to: "/faq", label: "FAQ" },
   { to: "/documenten", label: "Documenten" },
   { to: "/weer", label: "Meteo & Status" },
+  { to: "/agenda", label: "Agenda" },
   { to: "/reserveren", label: "Reserveren" },
   { to: "/contact", label: "Contact" },
   { to: "/privacy", label: "Privacybeleid" },

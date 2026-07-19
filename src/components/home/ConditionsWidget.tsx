@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { CloudSun, CalendarDays, ArrowRight, ExternalLink } from "lucide-react"
 import { FadeIn } from "@/components/motion/FadeIn"
 import { siteConfig } from "@/lib/data"
@@ -41,15 +42,13 @@ export function ConditionsWidget() {
               Openingsdagen, springweken en evenementen wijzigen doorheen het
               seizoen — bekijk de actuele planning voor alle drie dropzones.
             </p>
-            <a
-              href={siteConfig.agendaUrl}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/agenda"
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-sky hover:text-navy"
             >
-              Open de live agenda
+              Open de agenda
               <ArrowRight className="size-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </FadeIn>

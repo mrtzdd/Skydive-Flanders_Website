@@ -8,11 +8,13 @@ import { cn } from "@/lib/utils"
 
 const navLinks = [
   { to: "/reserveren", label: "Reserveren" },
+  { to: "/prijslijst", label: "Prijslijst" },
   { to: "/opleiding", label: "Opleiding" },
   { to: "/veiligheid", label: "Veiligheid" },
   { to: "/team", label: "Team" },
   { to: "/galerij", label: "Galerij" },
   { to: "/weer", label: "Meteo" },
+  { to: "/agenda", label: "Agenda" },
   { to: "/documenten", label: "Documenten" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },

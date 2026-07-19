@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react"
+import { Link } from "react-router-dom"
+import { Phone, Mail, MapPin, Clock, ArrowRight, ExternalLink } from "lucide-react"
 import { PageHero } from "@/components/layout/PageHero"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { FadeIn } from "@/components/motion/FadeIn"
@@ -107,15 +108,13 @@ export default function Contact() {
                   langer open. In de winterperiode gelden aangepaste
                   openingstijden.
                 </p>
-                <a
-                  href={siteConfig.agendaUrl}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  to="/agenda"
                   className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-sky hover:text-navy"
                 >
                   Bekijk de actuele planning
-                  <ExternalLink className="size-3.5" />
-                </a>
+                  <ArrowRight className="size-3.5" />
+                </Link>
               </div>
             </div>
           </FadeIn>

@@ -1,4 +1,5 @@
-import { ExternalLink, CalendarDays } from "lucide-react"
+import { Link } from "react-router-dom"
+import { ExternalLink, ArrowRight, CalendarDays } from "lucide-react"
 import { PageHero } from "@/components/layout/PageHero"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { FadeIn } from "@/components/motion/FadeIn"
@@ -64,10 +65,10 @@ export default function Weather() {
                 </p>
               </div>
               <Button asChild variant="outline" className="shrink-0">
-                <a href={siteConfig.agendaUrl} target="_blank" rel="noreferrer">
-                  Open de live agenda
-                  <ExternalLink className="size-4" />
-                </a>
+                <Link to="/agenda">
+                  Open de agenda
+                  <ArrowRight className="size-4" />
+                </Link>
               </Button>
             </div>
           </FadeIn>
